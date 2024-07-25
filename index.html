@@ -1,6 +1,28 @@
 <!DOCTYPE html> 
 <html lang="en"> 
   <head>
+    <title></title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        margin-top: 20px;
+      }
+      img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   <script>
     async function handleClick() {
       let response = await fetch("https://YOUR_LAMBDA_URL_HERE");
@@ -11,9 +33,8 @@
   </script>
   </head>
   <body>
-  <div align="center">
     <br><br><br><br>
-    <h1>Hello </span><span id="response">all! What happens when you click on the button below?</h1></span>
+    <h1>Hello <span id="response">all! What happens when you click on the button below?</h1></span>
     <button onclick="handleClick()">Click me</button><br>
     <br><br>
     <img
@@ -23,7 +44,6 @@
       src="https://images.unsplash.com/photo-1529247833802-700f53170380"
       alt = "Monkey.img"
     />
-  </div>
   </body>
 </html
 
